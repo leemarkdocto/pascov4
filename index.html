@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> PASCO V4.1</title>
+
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		
+		<!-- Isotope Sorting -->
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+  	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+
+		<!-- CSS Gallery -->
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+
+		<!--- CSS -->
+		<link rel='stylesheet'  href='assets/css/normalize.min.css' type='text/css' media='all' />
+		<link rel='stylesheet'  href='assets/css/font-awesome.min.css' type='text/css' media='all' />
+		<link rel='stylesheet'  href='assets/css/bootstrap.min.css' type='text/css' media='all' />
+		<link rel='stylesheet'  href='assets/css/photoswipe.css' type='text/css' media='all' />
+		<link rel='stylesheet'  href='assets/css/main.css' type='text/css' media='all' />
+		<link rel='stylesheet'  href='assets/css/responsive.css' type='text/css' media='all' />
+	</head>
+
+	<body>
+		<!-- Header -->
+    <header id="header" class="header">
+			<!-- .top-bar -->
+			<div class="top-bar">
+				<div class="container">
+					<div class="float-left d-sm-none d-md-block d-none">
+						<div class="social-icons">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="float-md-right">
+						<a class="float-right" href="#"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; Sign In</a> |
+						<a class="float-left" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-globe" aria-hidden="true"></i> &nbsp; ENG &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- //.top-bar -->
+
+
+			<!-- Main Nav -->
+			<div id="mainnav" class="main-nav">
+				<div id="app" class="container">
+					<nav class="navbar navbar-expand-lg">
+
+						<!-- hamburger menu -->
+						<div class="hamburger-menu d-block d-lg-none float-left">
+							<!--<span style="font-size:30px;cursor:pointer" onclick="openMainNav()">&#9776;</span>-->
+							<span class="fa fa-bars" onclick="openMainNav()"></span>
+							<div id="hamburger-main-nav" class="sidebar">
+								<a href="javascript:void(0)" class="closebtn" onclick="closeMainNav()">&times;</a>
+								<a href="#">HOME</a>
+								<a href="#">PORTFOLIO</a>
+								<a href="#">BLOG</a>
+								<a href="#">PAGES</a>
+								<a href="#">SHOP</a>
+								<a href="#">COMPONENTS</a>
+								<a href="#">FEATURES</a>
+							</div>
+						</div><!-- //.hamburger menu -->
+
+						<!-- Logo -->
+						<a class="navbar-brand" href="#"><img src="assets/img/logo-pasco.png" /></a>
+
+						<!-- cart menu -->
+						<div class="cart-menu d-block d-lg-none float-right">
+							<span style="font-size:30px;cursor:pointer" onclick="openCart()"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+							<div id="cart-main-nav" class="shopping-cart">
+								<a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+								<a href="#">Travel Equipment</a>
+								<a href="#">Photography Gadgets</a>
+								<a href="#">Camping</a>
+								<a href="#">Clothes</a>
+							</div>
+						</div><!-- //.cart menu -->
+
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav ml-auto main-menu">
+								<li class="menu-item"><a href="#">Home</a></li>
+								<li class="menu-item">
+									<a href="#">Portfolio<i class="fa fa-angle-down"></i></a>
+									<ul class="sub-menu">
+										<li><a href="#">Company</a></li>
+										<li><a href="#">Personal</a></li>
+										<li><a href="#">Freelance</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="#">Blog</a></li>
+								<li class="menu-item">
+									<a href="#">Pages<i class="fa fa-angle-down"></i></a>
+									<ul class="sub-menu">
+										<li><a href="#">Client</a></li>
+										<li><a href="#">Personal</a></li>
+										<li><a href="#">Organization</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="#">Shop</a></li>
+								<li class="menu-item"><a href="#">Components</a></li>
+								<li class="menu-item"><a href="#">Features</a></li>
+							</ul>
+
+							<div class="form-inline right-nav-panel">
+								<button class="openBtn" onclick="openSearch()"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></button>
+								<div id="myOverlay" class="overlay">
+									<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+									<div class="overlay-content">
+										<form action="#">
+											<input type="text" placeholder="What're we looking for?" name="search">
+											<button type="submit"><i class="fa fa-search"></i></button>
+										</form>
+									</div>
+								</div>
+								<a href="#" class="heart-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+
+					</nav>
+				</div>
+			</div> <!-- //.Main Nav -->
+			
+		</header><!-- //.Header -->
+
+
+		<!-- Carousel -->
+		<section class="section-banner text-center">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+				<!-- Carousel Inner -->
+				<div class="carousel-inner">
+					<!-- Carousel 1 -->
+					<div class="carousel-item active img-holder bg-black" style="background-image:url(assets/img/header-images/header-bg.png);">
+						<div class="carousel-caption">
+							<div class="d-flex align-items-center justify-content-center flex-column">
+								<div class="p-2"><h3>INSPIRATION</h3></div>
+								<div class="p-2"><h1>5 Ways Millenials Can start </br>Building Their Future Today</h1></div>
+								<div class="p-2"><a href="#">Read More</a></div>
+							</div>
+							<div class="blog-meta">
+								<div class="blog-author">
+									<img src="assets/img/header-images/header-author-img.jpg">
+									<h5>Henry Little</h5>
+									<h6><span class="blog-date">April 28, 2016</span><span class="blog-time">10:15</span></h6>
+								</div>   
+								<div class="blog-comments-likes">
+									<a href="#"><span class="blog-comments"><i class="fa fa-comments"></i>&nbsp;Comments (26)</span></a>
+									<a href="#"><span class="blog-likes"><i class="fa fa-heart"></i>&nbsp;Likes (07)</a></span>
+								</div> 
+							</div>
+						</div>
+					</div> <!-- //Carousel 1 -->
+
+					<!-- Carousel 2 --
+					<div class="carousel-item img-holder bg-black" style="background-image:url(assets/img/header-images/header-bg.png);">
+						<div class="carousel-caption">
+							<div class="d-flex align-items-center justify-content-center flex-column">
+								<div class="p-2"><h3>PHOTOGRAPHY</h3></div>
+								<div class="p-2"><h1>MAKE YOUR CUSTOM PHOTO BOOTH</h1></div>
+								<div class="p-2"><a href="#">Read More</a></div>
+							</div> 
+							<div class="blog-meta">
+								<div class="blog-author">
+									<img src="assets/img/header-images/header-author-img.jpg">
+									<h5>John Doe</h5>
+									<h6><span class="blog-date">April 28, 2016</span><span class="blog-time">10:15</span></h6>
+								</div> 
+								<div class="blog-comments-likes">
+									<a href="#"><span class="blog-comments"><i class="fa fa-comments"></i>&nbsp;Comments (26)</span></a>
+									<a href="#"><span class="blog-likes"><i class="fa fa-heart"></i>&nbsp;Likes (07)</a></span>
+								</div>   
+							</div>   
+						</div>
+					</div>  <!-- //Carousel 2 -->
+
+					<!-- Carousel 3 --
+					<div class="carousel-item img-holder bg-black" style="background-image:url(assets/img/header-images/header-bg.png);">
+						<div class="carousel-caption">
+							<div class="d-flex align-items-center justify-content-center flex-column">
+								<div class="p-2"><h3>INSPIRATION</h3></div>
+								<div class="p-2"><h1>WHY IT'S AMAZING TO DATE PEOPLE </br>WHO LOVE TRAVELLING</h1></div>
+								<div class="p-2"><a href="#">Read More</a></div>
+							</div>
+							<div class="blog-meta">
+								<div class="blog-author">
+									<img src="assets/img/header-images/header-author-img.jpg">
+									<h5>Saphire Vergara</h5>
+									<h6><span class="blog-date">April 28, 2016</span><span class="blog-time">10:15</span></h6>
+								</div>   
+								<div class="blog-comments-likes">
+									<a href="#"><span class="blog-comments"><i class="fa fa-comments"></i>&nbsp;Comments (26)</span></a>
+									<a href="#"><span class="blog-likes"><i class="fa fa-heart"></i>&nbsp;Likes (07)</a></span>
+								</div> 
+							</div>    
+						</div>
+					</div>  <!-- //Carousel 3 -->
+				</div> <!-- //Carousel Inner -->
+
+				<!-- Carousel Controller -->
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div> <!-- //Carousel Controller -->
+		</section> <!-- //Carousel -->
+
+
+		<!-- Isotope Wraper -->
+		<div class="wraper">
+			<!-- Sort Section -->
+			<section class="sort-blog-section d-none d-sm-block">
+				<div class="container">
+					<div class="d-flex iso-nav">
+						<ul class="nav nav-pills">
+							<li class="active"><div class="p-2"><p class="sort-blog-p"> SORT BLOG: </p></div></li>
+							<li class="nav-item" data-filter='*'><div class="p-2"><a href="" class="sort-btn-primary"> ALL </a></div></li>
+							<li class="nav-item" data-filter='.photography'><div class="p-2"><a href="" class="sort-btn-secondary"> PHOTOGRAPHY </a></div></li>
+							<li class="nav-item" data-filter='.illustration'><div class="p-2"><a href="" class="sort-btn-secondary"> ILLUSTRATION </a></div></li>
+							<li class="nav-item" data-filter='.graphicdesign'><div class="p-2"><a href="" class="sort-btn-secondary"> GRAPHIC DESIGN </a></div></li>
+							<li class="nav-item" data-filter='.webdesign'><div class="p-2"><a href="" class="sort-btn-secondary"> WEB DESIGN </a></div></li>
+							<li class="nav-item" data-filter='.videography'><div class="p-2"><a href="" class="sort-btn-secondary"> VIDEOGRAPHY </a></div></li>
+						</ul>
+					</div>
+				</div>
+			</section><!-- //.Sort Section-->
+
+			<!-- Sort Section Mobile -->
+			<div class="sort-section-mobile d-block d-sm-none">
+				<select id="mobileSelectFilter" class="sort-blog-section-mobile custom-select fa-caret-down">
+					<div class="p-2"><option class="nav-item" value='*' selected="selected"> SORT BLOG: ALL </option></div>
+					<div class="p-2"><option class="nav-item" value='.photography'> PHOTOGRAPHY </div></option></div>
+					<div class="p-2"><option class="nav-item" value='.illustration'> ILLUSTRATION </option></div>
+					<div class="p-2"><option class="nav-item" value='.graphicdesign'> GRAPHIC DESIGN </option></div>
+					<div class="p-2"><option class="nav-item" value='.webdesign'> WEB DESIGN </div></option></div>
+					<div class="p-2"><option class="nav-item" value='.videography'> VIDEOGRAPHY </div></option></div>
+				</select>
+			</div><!-- Sort Section Mobile -->
+	
+			<!-- Main Isotope -->
+			<div class="main-iso">
+				<!-- Blog and Sidebar Section -->
+				<section class="blog-sidebar-section">
+					<div class="container">
+						<div class="row">
+
+							<!-- Blog -->
+							<div class="col-lg-9 d-none d-sm-block">
+								<!-- Main Blog -->
+								<div class="main-blog item photography illustration">
+									<div class="item illustration">
+										<div class="container">
+											<div class="row">
+
+												<div class="main-blog-video bg-white">
+													<div class="video">
+														<iframe class="video-frame" src="https://www.youtube.com/embed/VCBZMUzNJak" frameborder="0" allowfullscreen></iframe>
+															<div class="card-img-overlay row">
+																	<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+																	<div class="col d-flex justify-content-end">
+																		<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																		<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+																	</div>                           
+															</div>
+													</div>
+												</div>
+												<div class="col-lg-12 main-blog-body bg-white">
+													<h5 class="main-blog-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="main-blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet. Hello mundi keletonom silvous plete?</p>
+												</div>
+												<div class="col-lg-12 main-blog-footer bg-white">
+													<div class="row">
+														<div class="col-lg-1 main-blog-footer-author">
+															<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+														</div>
+														<div class="col-lg-10 main-blog-footer-info">
+															<div class="blog-info">
+																<p class="blog-info-name"> John Doe </p>
+																<p class="blog-info-date"> April 28, 2016 </p>
+															</div>
+														</div>
+														<div class="col-lg-1 main-blog-footer-option">
+															<i class="fa fa-ellipsis-v"></i>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div> <!-- //Main Blog -->
+
+
+								<!-- Blog Row 1 -->
+								<div class="blog-row item illustration">
+									<div class="container">
+										<div class="row">
+											
+											<div class="col-lg-4 blog-row-image bg-white">
+												<div class="row img-blog-container">
+													<a href="#"><img class="" src="assets/img/article-images/article-bg-top-7.png" alt=""></a>
+													<div class="card-img-overlay row">
+															<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+															<div class="col d-flex justify-content-end">
+																<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+															</div>                           
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-8 bg-white">
+												<div class="row blog-row-body">
+													<h5 class="blog-row-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet, Amet numquam aspernatur!. Dolor sit camet jomah.</p>
+												</div>
+												<div class="row blog-row-footer">
+													<div class="col-lg-1 row-blog-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-10 row-blog-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 row-blog-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> <!-- //Blog Row 1 -->
+								<!-- Blog Row 2 -->
+								<div class="blog-row item illustration">
+									<div class="container">
+										<div class="row">
+											
+											<div class="col-lg-4 blog-row-image bg-white">
+												<div class="row img-blog-container">
+													<a href="#"><img class="" src="assets/img/article-images/article-top-bg-3.png" alt=""></a>
+													<div class="card-img-overlay row">
+															<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+															<div class="col d-flex justify-content-end">
+																<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+															</div>                           
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-8 bg-white">
+												<div class="row blog-row-body">
+													<h5 class="blog-row-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet, Amet numquam aspernatur!. Dolor sit camet jomah.</p>
+												</div>
+												<div class="row blog-row-footer">
+													<div class="col-lg-1 row-blog-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-10 row-blog-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 row-blog-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> <!-- //Blog Row 2 -->
+								<!-- Blog Row 3 -->
+								<div class="blog-row item illustration">
+									<div class="container">
+										<div class="row">
+											
+											<div class="col-lg-4 blog-row-image bg-white">
+												<div class="row img-blog-container">
+													<a href="#"><img class="" src="assets/img/article-images/article-top-bg-4.png" alt=""></a>
+													<div class="card-img-overlay row">
+															<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+															<div class="col d-flex justify-content-end">
+																<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+															</div>                           
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-8 bg-white">
+												<div class="row blog-row-body">
+													<h5 class="blog-row-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet, Amet numquam aspernatur!. Dolor sit camet jomah.</p>
+												</div>
+												<div class="row blog-row-footer">
+													<div class="col-lg-1 row-blog-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-10 row-blog-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 row-blog-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> <!-- //Blog Row 3 -->
+
+
+								<!-- Blog Column -->
+								<div class="blog-column item photography graphicdesign videography">
+									<div class="container">
+										<div class="row">
+
+											<!-- Blog Column 1 -->
+											<div class="col-lg-4 blog-column-1 bg-white">
+												<div class="row">
+													<div class="blog-column-video bg-white">
+														<div class="video">
+															<iframe class="video-frame" src="https://www.youtube.com/embed/OLFRClOUnDM" frameborder="0" allowfullscreen></iframe>
+																<div class="card-img-overlay row">
+																		<div class="col d-flex justify-content-start text-white"><h6>PHOTOGRAPHY</h6></div>
+																		<div class="col d-flex justify-content-end">
+																			<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">14</i></a>
+																			<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">9</i></a>
+																		</div>                           
+																</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 blog-column-body bg-white">
+													<h5 class="blog-column-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+												</div>
+												<div class="row blog-column-footer bg-white">
+													<div class="col-lg-1 blog-column-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-9 blog-column-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 blog-column-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div> <!-- //Blog Column 1 -->
+
+											<!-- Blog Column 2 -->
+											<div class="col-lg-4 blog-column-1 bg-white">
+												<div class="row">
+													<div class="blog-column-image bg-white">
+														<div class="image">
+															<a href="#"><img class="image-frame" src="assets/img/article-images/article-top-bg-5.png" alt=""></a>
+															<div class="card-img-overlay row">
+																	<div class="col d-flex justify-content-start text-white"><h6>PHOTOGRAPHY</h6></div>
+																	<div class="col d-flex justify-content-end">
+																		<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">14</i></a>
+																		<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">9</i></a>
+																	</div>                           
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 blog-column-body bg-white">
+													<h5 class="blog-column-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+												</div>
+												<div class="row blog-column-footer bg-white">
+													<div class="col-lg-1 blog-column-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-9 blog-column-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 blog-column-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div> <!-- //Blog Column 2 -->
+
+											<!-- Blog Column 3 -->
+											<div class="col-lg-4 blog-column-1 bg-white">
+												<div class="row">
+													<div class="blog-column-image bg-white">
+
+														<div class="image">
+															<div class="slideshow-container">
+																<div class="mySlides">
+																	<a href="#"><img class="image-frame" src="assets/img/article-images/article-bg-top-7.png" alt=""></a>
+																</div>
+																<div class="mySlides">
+																	<a href="#"><img class="image-frame" src="assets/img/article-images/article-top-bg-3.png" alt=""></a>
+																</div>
+																<div class="mySlides">
+																	<a href="#"><img class="image-frame" src="assets/img/article-images/article-top-bg-2.png" alt=""></a>
+																</div>
+																<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+																<a class="next" onclick="plusSlides(1)">&#10095;</a>
+															</div>
+
+															<div class="card-img-overlay row">
+																	<div class="col d-flex justify-content-start text-white"><h6>PHOTOGRAPHY</h6></div>
+																	<div class="col d-flex justify-content-end">
+																		<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">14</i></a>
+																		<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">9</i></a>
+																	</div>                           
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<div class="col-lg-12 blog-column-body bg-white">
+													<h5 class="blog-column-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+												</div>
+												<div class="row blog-column-footer bg-white">
+													<div class="col-lg-1 blog-column-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-9 blog-column-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 blog-column-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div> <!-- //Blog Column 3 -->
+
+										</div>
+									</div>
+								</div> <!-- //Blog Column -->
+
+								<!-- Blog 2 Column -->
+								<div class="blog-2-column item photography graphicdesign webdesign">
+									<div class="container">
+										<div class="row">
+
+											<!-- Blog 2 Column 1 -->
+											<div class="col-lg-6 blog-2-column-1 bg-white">
+												<div class="row">
+													<div class="blog-2-column-image bg-white">
+														<div class="image">
+															<a href="#"><img class="image-frame" src="assets/img/article-images/article-bg-top-8.png" alt=""></a>
+															<div class="card-img-overlay row">
+																<div class="col d-flex justify-content-start text-white"><h6>PHOTOGRAPHY</h6></div>
+																<div class="col d-flex justify-content-end">
+																	<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">6</i></a>
+																	<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">89</i></a>
+																</div>                           
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 blog-2-column-body bg-white">
+													<h5 class="blog-2-column-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-2-column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+												</div>
+												<div class="col-lg-12 blog-2-column-footer bg-white">
+													<div class="row">
+														<div class="col-sm-1 blog-2-column-footer-author">
+															<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+														</div>
+														<div class="col-sm-10 blog-2-column-footer-info">
+															<div class="blog-info">
+																<p class="blog-info-name"> John Doe </p>
+																<p class="blog-info-date"> April 28, 2016 </p>
+															</div>
+														</div>
+														<div class="col-sm-1 blog-2-column-footer-option">
+															<i class="fa fa-ellipsis-v"></i>
+														</div>
+													</div>
+												</div>
+											</div> <!-- //Blog 2 Column 1 -->
+
+											<!-- Blog 2 Column 2 -->
+											<div class="col-lg-6 blog-2-column-2 bg-white">
+												<div class="row">
+													<div class="blog-2-column-image bg-white">
+														<div class="image">
+															<a href="#"><img class="image-frame" src="assets/img/article-images/article-top-bg-9.png" alt=""></a>
+																<div class="card-img-overlay row">
+																		<div class="col d-flex justify-content-start text-white"><h6>PHOTOGRAPHY</h6></div>
+																		<div class="col d-flex justify-content-end">
+																			<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">6</i></a>
+																			<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">89</i></a>
+																		</div>                           
+																</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 blog-2-column-body bg-white">
+													<h5 class="blog-2-column-title font-weight-bold">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+													</h5>
+													<p class="blog-2-column-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+												</div>
+												<div class="col-lg-12 blog-2-column-footer bg-white">
+													<div class="row">
+														<div class="col-sm-1 blog-2-column-footer-author">
+															<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+														</div>
+														<div class="col-sm-10 blog-2-column-footer-info">
+															<div class="blog-info">
+																<p class="blog-info-name"> John Doe </p>
+																<p class="blog-info-date"> April 28, 2016 </p>
+															</div>
+														</div>
+														<div class="col-sm-1 blog-2-column-footer-option">
+															<i class="fa fa-ellipsis-v"></i>
+														</div>
+													</div>
+												</div>
+											</div> <!-- //Blog 2 Column 2 -->
+											
+										</div>
+									</div>
+								</div> <!-- //Blog 2 Column -->
+
+
+								<!-- More Blogs -->
+								<div class="row float-right moreblog-option-btn">
+									<span class="more-blog-option">More</span><span><a href class="btn more-blog-btn"><span class="fa fa-arrow-right"></span></a></span>
+								</div> <!-- //More Blogs -->	
+							</div> <!-- //Blog -->
+
+
+							<!-- Mobile Blogs -->
+							<div id="mobileIsotope" class="col-lg-9 d-block d-sm-none">
+
+								<!-- Mobile Main Blog -->
+								<div class="main-blog item webdesign photography graphicdesign">
+									<div class="container">
+										<div class="row">
+
+											<div class="main-blog-video bg-white">
+												<div class="video">
+													<iframe class="video-frame" src="https://www.youtube.com/embed/VCBZMUzNJak" frameborder="0" allowfullscreen></iframe>
+														<div class="card-img-overlay row">
+																<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+																<div class="col d-flex justify-content-end">
+																	<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																	<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+																</div>                           
+														</div>
+												</div>
+											</div>
+											<div class="col-lg-12 main-blog-body bg-white">
+												<h5 class="main-blog-title font-weight-bold">
+													Food That Actually Taste Better When You Freeze
+												</h5>
+												<p class="main-blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet. Hello mundi keletonom silvous plete?</p>
+											</div>
+											<div class="col-lg-12 main-blog-footer bg-white">
+												<div class="row">
+													<div class="col-lg-1 main-blog-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-10 main-blog-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 main-blog-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> <!-- //.Mobile Main Blog -->
+
+								<!-- Mobile Blogs Row 1 -->
+								<div class="mobile-blogs-row card mb-3 wide-card item illustration photography">
+									<div class="container">
+										<div class="row">
+
+											<div class="col-6 cont-imgcover no-padding"  style="background-image: url(assets/img/article-images/article-bg-top-8.png);">
+												<div class="blog-stats">
+													<div class="text-white"><h6>ILLUSTRATION</h6></div>
+													<a href="#" class="float-left"><i class="fa fa-comments text-white" aria-hidden="true">7</i>  <i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+												</div>
+											</div>
+											
+											<div class="blog-row-content">
+												<div class="col-lg-12 row-blog-footer-info">
+													<div class="blog-body">
+														<h5 class="blog-title font-weight-bold">
+															Food That Actually Taste Better When You Freeze
+														</h5>
+													</div>
+													<div class="blog-info">
+														<p class="blog-info-name"> John Doe </p>
+														<p class="blog-info-date"> April 28, 2016 <i class="fa fa-ellipsis-v float-right"></i></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div><!-- //.Mobile Blogs Row 1 -->
+
+								<!-- Mobile Blog Grid -->
+								<div class="container mobile-blog-grid sm-card-deck item photography illustration">
+									<div class="row">
+
+										<!-- Grid blog Left -->
+										<div class="grid-blog-left col-6">
+											<div class="blog-row">
+												<div class="container">
+													<div class="row">
+														
+														<div class="col-lg-4 blog-row-image bg-white">
+															<div class="row img-blog-container">
+																<a href="#"><img class="" src="assets/img/article-images/article-top-bg-5.png" alt=""></a>
+																<div class="card-img-overlay row">
+																		<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+																		<div class="col d-flex justify-content-end">
+																			<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																			<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+																		</div>                           
+																</div>
+															</div>
+														</div>
+
+														<div class="col-lg-8 bg-white">
+															<div class="row blog-row-body">
+																<h5 class="blog-row-title font-weight-bold">
+																	Food That Actually Taste Better When You Freeze
+																</h5>
+															</div>
+															<div class="row blog-row-footer">
+																<div class="col-lg-10 row-blog-footer-info">
+																	<div class="blog-info">
+																		<p class="blog-info-name"> John Doe </p>
+																		<p class="blog-info-date"> April 28, 2016 </p>
+																	</div>
+																</div>
+																<div class="col-lg-1 row-blog-footer-option">
+																	<i class="fa fa-ellipsis-v"></i>
+																</div>
+															</div>
+														</div>
+			
+													</div>
+												</div>
+											</div>
+											
+											<div class="blog-row">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-4 blog-row-image bg-white">
+															<div class="row img-blog-container">
+																<a href="#"><img class="" src="assets/img/article-images/article-top-bg-4.png" alt=""></a>
+																<div class="card-img-overlay row">
+																		<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+																		<div class="col d-flex justify-content-end">
+																			<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																			<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+																		</div>                           
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div><!-- //.Grid blog Left -->
+
+										<!-- Grid blog Right -->
+										<div class="grid-blog-right col-6">
+
+											<div class="blog-row">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-4 blog-row-image bg-white">
+															<div class="row img-blog-container">
+																<a href="#"><img class="" src="assets/img/article-images/article-bg-top-7.png" alt=""></a>
+																<div class="card-img-overlay row">
+																		<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+																		<div class="col d-flex justify-content-end">
+																			<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																			<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+																		</div>                           
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="blog-row">
+												<div class="container">
+													<div class="row">
+														
+														<div class="col-lg-4 blog-row-image bg-white">
+															<div class="row img-blog-container">
+																<a href="#"><img class="" src="assets/img/article-images/article-top-bg-1.png" alt=""></a>
+																<div class="card-img-overlay row">
+																		<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+																		<div class="col d-flex justify-content-end">
+																			<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																			<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+																		</div>                           
+																</div>
+															</div>
+														</div>
+														<div class="col-lg-8 bg-white">
+															<div class="row blog-row-body">
+																<h5 class="blog-row-title font-weight-bold">
+																	Travel Tips for Men
+																</h5>
+															</div>
+															<div class="row blog-row-footer">
+																<div class="col-lg-10 row-blog-footer-info">
+																	<div class="blog-info">
+																		<p class="blog-info-name"> John Doe </p>
+																		<p class="blog-info-date"> April 28, 2016 </p>
+																	</div>
+																</div>
+																<div class="col-lg-1 row-blog-footer-option">
+																	<i class="fa fa-ellipsis-v"></i>
+																</div>
+															</div>
+														</div>
+			
+													</div>
+												</div>
+											</div>
+
+										</div><!-- //.Grid blog Right -->
+
+									</div>
+								</div><!-- //.Mobile Blog Grid -->
+
+								<!-- Mobile Video Blog -->
+								<div class="blog-row video-blog item videography graphicdesign illustration">
+									<div class="container">
+										<div class="row">
+											
+											<div class="col-lg-4 blog-row-image bg-white">
+												<div class="row img-blog-container">
+													<iframe class="video-frame" src="https://www.youtube.com/embed/VCBZMUzNJak" frameborder="0" allowfullscreen></iframe>
+													<div class="card-img-overlay row">
+															<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+															<div class="col d-flex justify-content-end">
+																<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+															</div>                           
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div><!-- //.Mobile Video Blog -->
+
+								<!-- Mobile Blogs Row 1 -->
+								<div class="mobile-blogs-row card mb-3 wide-card item photography videography">
+									<div class="container">
+										<div class="row">
+
+											<div class="col-6 cont-imgcover no-padding"  style="background-image: url(assets/img/article-images/article-top-bg-6.png);">
+												<div class="blog-stats">
+													<div class="text-white"><h6>ILLUSTRATION</h6></div>
+													<a href="#" class="float-left"><i class="fa fa-comments text-white" aria-hidden="true">7</i>  <i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+												</div>
+											</div>
+											
+											<div class="blog-row-content">
+												<div class="col-lg-12 row-blog-footer-info">
+													<div class="blog-body">
+														<h5 class="blog-title font-weight-bold">
+															Lorem Ipsum dolor sit amet.
+														</h5>
+													</div>
+													<div class="blog-info">
+														<p class="blog-info-name"> John Doe </p>
+														<p class="blog-info-date"> April 28, 2016 <i class="fa fa-ellipsis-v float-right"></i></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div><!-- //.Mobile Blogs Row 1 -->
+								<!-- Mobile Blogs Row 2 -->
+								<div class="mobile-blogs-row card mb-3 wide-card item illustration">
+									<div class="container">
+										<div class="row">
+
+											<div class="col-6 cont-imgcover no-padding"  style="background-image: url(assets/img/article-images/article-top-bg-2.png);">
+												<div class="blog-stats">
+													<div class="text-white"><h6>ILLUSTRATION</h6></div>
+													<a href="#" class="float-left"><i class="fa fa-comments text-white" aria-hidden="true">7</i>  <i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+												</div>
+											</div>
+											
+											<div class="blog-row-content">
+												<div class="col-lg-12 row-blog-footer-info">
+													<div class="blog-body">
+														<h5 class="blog-title font-weight-bold">
+															Ipsum dolor sit amet Lorem
+														</h5>
+													</div>
+													<div class="blog-info">
+														<p class="blog-info-name"> John Doe </p>
+														<p class="blog-info-date"> April 28, 2016 <i class="fa fa-ellipsis-v float-right"></i></p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div><!-- //.Mobile Blogs Row 2 -->
+
+								<!-- Mobile Main Blog -->
+								<div class="blog-row video-blog item webdesign videography">
+									<div class="container">
+										<div class="row">
+											
+											<div class="col-lg-4 blog-row-image bg-white">
+												<div class="row img-blog-container">
+													<iframe class="video-frame" src="https://www.youtube.com/embed/OLFRClOUnDM" frameborder="0" allowfullscreen></iframe>
+													<div class="card-img-overlay row">
+															<div class="col d-flex justify-content-start text-white"><h6>ILLUSTRATION</h6></div>
+															<div class="col d-flex justify-content-end">
+																<a href="#"><i class="fa fa-comments text-white" aria-hidden="true">7</i></a>
+																<a href="#"><i class="fa fa-heart-o text-white" aria-hidden="true">15</i></a>
+															</div>                           
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 main-blog-body bg-white">
+												<h5 class="main-blog-title font-weight-bold">
+														Amet numquam aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+												</h5>
+												<p class="main-blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet. Hello mundi keletonom silvous plete?</p>
+											</div>
+											<div class="col-lg-12 main-blog-footer bg-white">
+												<div class="row">
+													<div class="col-lg-1 main-blog-footer-author">
+														<a href="#"><span class="body-blog-image blog-author"><img src="assets/img/header-images/header-author-img.jpg"></span></a>
+													</div>
+													<div class="col-lg-10 main-blog-footer-info">
+														<div class="blog-info">
+															<p class="blog-info-name"> John Doe </p>
+															<p class="blog-info-date"> April 28, 2016 </p>
+														</div>
+													</div>
+													<div class="col-lg-1 main-blog-footer-option">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> <!-- //.Mobile Main Blog -->
+
+							</div><!-- //.Mobile Blogs -->
+
+
+							<!-- Sidebar -->
+							<div class="col-lg-3">
+								<div class="container">
+									<div class="row">
+
+										<!-- About -->
+										<div class="about-text d-block d-sm-none">
+											<h5>PASCO</h5>
+											<p> PASCO Lorem sit amet varius orci. vitae fringilla justo fringilla. Vestibulum loeuenim and libero, lobortis eu tortor ut, hendrerit  maxi tellus. Lorem Ipsum dolor sit conception. </p>
+											<button type="button" class="btn btn-secondary">READ MORE</button>
+										</div><!-- //.About -->
+
+										<!-- Search -->
+										<div class="input-group">
+											<input type="text" class="form-control d-none d-sm-block" placeholder="Search">
+											<span class="input-group-btn d-none d-sm-block">
+												<i class="fa fas fa-search"></i>
+											</span>
+										</div> <!-- //Search -->
+										<!-- Categories -->
+										<div class="categories">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<h3 class="card-header-h3 text-primary">CATEGORIES</h3>
+												</li>
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<div class="cat-sub-content-text">Photography</div>
+													<h3><span class="badge badge-primary badge-pill cat-sub-content-num">195</span></h3>
+												</li>
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<div class="cat-sub-content-text">Illustration</div>
+													<h3><span class="badge badge-primary badge-pill cat-sub-content-num">15</span></h3>
+												</li>
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<div class="cat-sub-content-text">Graphic Design</div>
+													<h3><span class="badge badge-primary badge-pill cat-sub-content-num">30</span></h3>
+												</li>
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<div class="cat-sub-content-text">Web Design</div>
+													<h3><span class="badge badge-primary badge-pill cat-sub-content-num">14</span></h3>
+												</li>
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<div class="cat-sub-content-text">Videography</div>
+													<h3><span class="badge badge-primary badge-pill cat-sub-content-num">8</span></h3>
+												</li>
+											</ul>
+										</div> <!-- //Categories -->
+										<!-- Subscribe -->
+										<div class="subscribe d-none d-sm-block">
+											<ul class="list-group list-group-flush">
+													<li class="list-group-item d-flex justify-content-between align-items-center">
+															<h3 class="card-header-h3 text-primary">SUBSCRIBE</h3>
+													</li>
+													<div class="form-group form-group-name">
+															<label for="name">Name</label>
+															<input type="text" class="form-control" id="name" placeholder="Ignor Ten">
+													</div>
+													<div class="form-group">
+															<label for="name">Email</label>
+															<input type="email" class="form-control" id="name" placeholder="email@adress.com">
+													</div>
+													<a href="" class="btn btn-primary btn-lg btn-block btn-subscribe">SUBSCRIBE</a>
+											</ul>
+											<ul>
+												<div class="social-widget text-center">
+													<h3 class="or"><span class="span-or"> or </span></h3>
+													<ul class="list-inline">
+														<li class="list-inline-item"><a href="#" class="btn"><span class="fab fa-facebook-f"></span></a></li>
+														<li class="list-inline-item"><a href="#" class="btn"><span class="fab fa-twitter"></span></a></li>
+														<li class="list-inline-item"><a href="#" class="btn"><span class="fab fa-vk"></span></a></li>
+														<li class="list-inline-item"><a href="#" class="btn"><span class="fab fa-pinterest-p"></span></a></li>
+														<li class="list-inline-item"><a href="#" class="btn"><span class="fab fa-tumblr"></span></a></li>
+														<li class="list-inline-item"><a href="#" class="btn"><span class="fab fa-dribbble"></span></a></li>
+													</ul>
+												</div>
+											</ul>
+										</div> <!-- //Subscribe -->
+										<!-- Widget -->
+										<div class="widget widget-320p d-none d-sm-block">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<h3 class="card-header-h3 text-primary">TAB POST WIDGET</h3>
+												</li>
+												<ul class="nav nav-pills nav-justified">
+													<li class="nav-item">
+														<a class="nav-link active recent" href="#">Recent Post</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link popular" href="#">Popular Post</a>
+													</li>
+												</ul>
+											</ul>
+											<table class="table widget-blog">
+												<tbody>
+													<tr>
+														<td>
+															<div class="media">
+																<img src="assets/img/article-images/article-bg-top-7.png">
+																<div class="media-body">
+																	<span class="post-date">June 2, 2018</span><span class="fa fa-comments"> 17</span>
+																	<h6>Lorem ipsum dolor sit amet, to consectetur adipi.</h6>								        	    
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="media">
+																<img src="assets/img/article-images/article-bg-top-8.png">
+																<div class="media-body">
+																	<span class="post-date">June 2, 2018</span><span class="fa fa-comments"> 17</span>
+																	<h6>Lorem ipsum dolor sit amet, to consectetur.</h6>								        	    
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="media">
+																<img src="assets/img/article-images/article-top-bg-9.png">
+																<div class="media-body">
+																	<span class="post-date">June 2, 2018</span><span class="fa fa-comments"> 17</span>
+																	<h6>Lorem ipsum dolor sit amet, to consectetur.</h6>								        	    
+																</div>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="media">
+																<img src="assets/img/article-images/article-top-bg-6.png">
+																<div class="media-body">
+																	<span class="post-date">June 2, 2018</span><span class="fa fa-comments"> 17</span>
+																	<h6>Lorem ipsum dolor sit amet, to consectetur adipi scing elit.</h6>								        	    
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div> <!-- //Widget -->
+										<!-- Tags -->
+										<div class="tags">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item d-flex justify-content-between align-items-center">
+													<h3 class="card-header-h3">TAGS</h3>
+												</li></br>
+												<div class="container">
+														<div class="row">
+																<div class="col tag-content"> Photography </div>
+																<div class="col tag-content"> Web Design </div>
+														</div>
+														<div class="row">
+																<div class="col tag-content"> Youtube </div>
+																<div class="col tag-content"> Envato </div>
+																<div class="col tag-content"> Art </div>
+														</div>
+														<div class="row">
+																<div class="col tag-content"> Themefotest </div>
+																<div class="col tag-content"> Illustration </div>
+														</div>
+												</div>
+											</ul>
+										</div><!-- //Tags -->
+
+									</div>
+								</div>
+							</div> <!-- //Sidebar -->
+
+						</div>
+					</div>
+				</section> <!-- //Blog and Sidebar Section -->
+
+
+				<!-- Gallery -->
+				<section class="instagram-widgets d-none d-sm-block">
+					<div class="my-gallery1" itemscope itemtype="http://schema.org/ImageGallery">
+						
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+									<div class="row">
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-1.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-1.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-2.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-2.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+									<div class="row">
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-3.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-3.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-4.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-4.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+									<div class="row">
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-5.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-5.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-6.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-6.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+									<div class="row">
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-7.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-7.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+										<div class="col-lg-6">
+											<figure class="col-xs-3" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="assets/img/instagram-widgets/insta-widget-img-9.png" itemprop="contentUrl" data-size="1024x1024">
+													<img class="img1" src="assets/img/instagram-widgets/insta-widget-img-9.png" class="img-responsive" itemprop="thumbnail" alt="Image description" />
+												</a>                                        
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Root element of PhotoSwipe. Must have class pswp. -->
+						<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+			
+						<!-- Background of PhotoSwipe. It's a separate element, as animating opacity is faster than rgba(). -->
+						<div class="pswp__bg"></div>
+
+						<!-- Slides wrapper with overflow:hidden. -->
+						<div class="pswp__scroll-wrap">
+
+						<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+						<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+						<div class="pswp__container">
+							<div class="pswp__item"></div>
+							<div class="pswp__item"></div>
+							<div class="pswp__item"></div>
+						</div>
+
+						<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+						<div class="pswp__ui pswp__ui--hidden">
+							<div class="pswp__top-bar">
+								<!--  Controls are self-explanatory. Order can be changed. -->
+								<div class="pswp__counter"></div>
+									<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+									<button class="pswp__button pswp__button--share" title="Share"></button>
+									<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+									<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+									<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+									<!-- element will get class pswp__preloader--active when preloader is running -->
+									<div class="pswp__preloader">
+											<div class="pswp__preloader__icn">
+												<div class="pswp__preloader__cut">
+													<div class="pswp__preloader__donut"></div>
+												</div>
+											</div>
+									</div>
+								</div>
+
+								<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+										<div class="pswp__share-tooltip"></div> 
+								</div>
+								<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+								</button>
+								<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+								</button>
+
+								<div class="pswp__caption">
+										<div class="pswp__caption__center"></div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</section> <!-- //Gallery -->
+
+
+				<!-- Footer Banner -->
+				<section class="container-fluid subscribe-banner-section">
+					<div class="container d-none d-sm-block">
+						<div class="row">
+							<div class="col-lg-7">
+									<h1>Subscribe to our newsletter</h1>
+							</div>
+							<div class="col-lg-3">
+									<form action="#">
+									<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email Address">
+									</div>
+							</div>
+							<div class="col-lg-2">
+								<a href="#" class="btn footer-btn-subscribe">Subscribe</a>
+							</div>
+							</form>		
+						</div>
+					</div>
+				</section> <!-- //Footer Banner -->
+
+
+				<!-- Footer -->
+				<section class="footersection">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-lg-3 d-none d-sm-block">
+								<h3>Pages Widget</h3>
+								<div id="accordion d-none d-sm-block">
+									<button class="accordion">HOME</button>
+									<div class="panel">
+										<div class="container">
+											<div class="row">
+												<a href="#" class="dropdown-item dropdown-list"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+											</div>
+										</div>
+									</div>
+
+									<button class="accordion">PAGES</button>
+									<div class="panel">
+										<div class="container">
+											<div class="row">
+												<a href="#" class="dropdown-item dropdown-list"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+											</div>
+										</div>
+									</div>
+
+									<button class="accordion">PORTFOLIO</button>
+									<div class="panel">
+										<div class="container">
+											<div class="row">
+												<a href="#" class="dropdown-item dropdown-list"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+											</div>
+										</div>
+									</div>
+
+									<button class="accordion">BLOG</button>
+									<div class="panel">
+										<div class="container">
+											<div class="row">
+												<a href="#" class="dropdown-item dropdown-list"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+											</div>
+										</div>
+									</div>
+
+									<button class="accordion">SHOP</button>
+									<div class="panel">
+										<div class="container">
+											<div class="row">
+												<a href="#" class="dropdown-item dropdown-list"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+												<a href="#" class="dropdown-item"> Action </a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 twitter-widget d-none d-sm-block">
+								<h3>Twitter Widget</h3>
+								<table class="table">
+										<tr>
+												<td>
+														<div class="card">
+																<div class="card-body">
+																		<div class="media">
+																				<span class="fab fa-twitter twitter-widget-icon"></span>
+																				<div class="media-body twitter-widget-font">
+																						<p>@PASCO, Duis commodo elit sed nisi molestie</p>
+																				</div>
+																		</div>							
+																</div>
+																<div class="card-footer">
+																		<span class="footer-twitter-media-widget">2 hours ago <span class="fa fa-arrow-right"></span> <a href="#">Reply</a>&nbsp; <a href="#">Retweet</a>&nbsp; <a href="#">Favorite</a></span>
+																</div>
+														</div>
+												</td>
+										</tr>
+										<tr>
+												<td>
+														<div class="card">
+																<div class="card-body">
+																		<div class="media">
+																				<span class="fab fa-twitter twitter-widget-icon"></span>
+																				<div class="media-body twitter-widget-font">
+																						<p>@PASCO, Duis commodo elit sed nisi molestie</p>
+																				</div>
+																		</div>							
+																</div>
+																<div class="card-footer">
+																		<span class="footer-twitter-media-widget">2 hourasds ago <span class="fa fa-arrow-right"></span> <a href="#">Reply</a>&nbsp; <a href="#">Retweet</a>&nbsp; <a href="#">Favorite</a></span>
+																</div>
+														</div>
+												</td>
+										</tr>
+										<tr>
+												<td>
+														<div class="card">
+																<div class="card-body">
+																		<div class="media">
+																				<span class="fab fa-twitter twitter-widget-icon"></span>
+																				<div class="media-body twitter-widget-font">
+																						<p>@PASCO, Duis commodo elit sed nisi molestie</p>
+																				</div>
+																		</div>							
+																</div>
+																<div class="card-footer">
+																		<span class="footer-twitter-media-widget">2 hours ago <span class="fa fa-arrow-right"></span> <a href="#">Reply</a>&nbsp; <a href="#">Retweet</a>&nbsp; <a href="#">Favorite</a></span>
+																</div>
+														</div>
+												</td>
+										</tr>						
+								</table>
+								<h3>Social Widget</h3>
+								<div class="social-widget d-none d-sm-block">
+										<ul class="list-inline">
+												<li class="list-inline-item"><button class="btn"><span class="fab fa-facebook-f"></span></button></li>
+												<li class="list-inline-item"><button class="btn"><span class="fab fa-twitter"></span></button></li>
+												<li class="list-inline-item"><button class="btn"><span class="fab fa-vk"></span></button></li>
+												<li class="list-inline-item"><button class="btn"><span class="fab fa-pinterest-p"></span></button></li>
+												<li class="list-inline-item"><button class="btn"><span class="fab fa-tumblr"></span></button></li>
+												<li class="list-inline-item"><button class="btn"><span class="fab fa-dribbble"></span></button></li>
+										</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-3 flickr-widget">
+									<h3>Flickr Widget</h3>
+									<div class="row">
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/10.png" class="img-fluid"/>
+											</div>
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/11.png" class="img-fluid"/>
+											</div>
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/12.png" class="img-fluid"/>
+											</div>
+									</div>
+									<div class="row">
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/13.png" class="img-fluid"/>
+											</div>
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/14.png" class="img-fluid"/>
+											</div>
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/15.png" class="img-fluid"/>
+											</div>
+									</div>
+									<div class="row">
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/16.png" class="img-fluid"/>
+											</div>
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/17.png" class="img-fluid"/>
+											</div>
+											<div class="col-lg-4">
+													<img src="assets/img/flickr-widgets/18.png" class="img-fluid"/>
+											</div>
+									</div>
+							</div>
+							<div class="col-lg-3 newsletter-widget d-none d-sm-block">
+								<h3>News Letter</h3>
+								<form action="#">
+										<div class="form-group">
+												<input type="text" class="form-control" placeholder="Name">
+										</div>
+										<div class="form-group">
+												<input type="text" class="form-control" placeholder="Email Address">
+										</div>
+										<div class="form-group">
+												<textarea type="text" class="form-control" placeholder="Message" rows="4"></textarea>
+										</div>
+										<a href="#" class="btn form-control">Subscribe</a>
+										<!--<button type="submit" class="btn form-control">Subscribe</button>-->
+								</form>	
+							</div>
+
+						</div>
+					</div>
+				</section> <!-- //Footer -->
+
+
+				<!-- Footer Bottom -->
+				<footer id="footer" class="footer">
+					<div class="site-footer">
+						<div class="container">
+
+							<nav class="navbar navbar-expand-lg">
+								<div class="collapse navbar-collapse">
+									<ul class="navbar-nav mr-auto">
+									<li class="nav-item active">
+										<a class="nav-link footer-nav" href="index.php">HOME<span class="sr-only">(current)</span></a>
+									</li>
+									<li class="nav-item ">
+										<a class="nav-link footer-nav" href="#">PORTFOLIO</i></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link footer-nav" href="#">BLOG</i></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link footer-nav" href="#">PAGES</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link footer-nav" href="#">SHOP</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link footer-nav" href="#">COMPONENTS</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link footer-nav" href="#">FEATURES</a>
+									</li>
+									</ul>
+									<form class="form-inline my-2 my-lg-0">
+										<div class="right-icon">
+											<i class="fa fa-search search-footer" aria-hidden="true"></i>
+												<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+											</div>
+											<div class="language">
+											<i class="fa fa-globe" aria-hidden="true"></i>ENG<i class="fa fa-angle-down"></i>
+											</div>
+									</form>
+								</div>
+							</nav>
+
+							<!-- Mobile Footer -->
+							<div class="container d-block d-sm-none">
+								<ul class="nav d-flex justify-content-center">
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											<i class="fa fa-vk" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											<i class="fa fa-tumblr" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">
+											<i class="fa fa-dribbble" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+								<ul class="d-flex justify-content-center">
+									<p class=""> &#9400; 2016 PASCO | All Rights Reserved </p>
+								</ul>
+							</div>
+							<!-- //.Mobile Footer -->
+
+						</div>      
+					</div>  
+				</footer><!-- //Footer Bottom -->
+
+
+			</div><!-- //.Main Isotope -->
+		</div> <!-- //Isotope Wraper -->
+
+
+
+		<!-- JS -->				
+		<script type='text/javascript' src="assets/js/jquery-3.3.1.min.js"></script>
+		<script type='text/javascript' src="assets/js/modernizr.min.js"></script>
+		<script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+		<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type='text/javascript' src="assets/js/isotope.pkgd.min.js"></script>
+		<script type='text/javascript' src="assets/js/main.js"></script>
+
+		<!-- JS Gallery -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+	</body>
+</html>
