@@ -320,6 +320,9 @@ p, ol li, ul li, blockquote{
 .overlay button:hover {
 	background: #bbb;
 }
+.openBtn i{
+	margin-bottom: 7px;
+}
 
 
 /******************************
